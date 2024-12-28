@@ -1,0 +1,36 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/waseem/ros2_ws/build/robotic_hand_bringup
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup//launch/robotic_hand_gazebo.launch.xml
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/ament_index/resource_index/package_run_dependencies/robotic_hand_bringup
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/ament_index/resource_index/parent_prefix_path/robotic_hand_bringup
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/path.sh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/path.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.bash
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.sh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.zsh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/package.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/ament_index/resource_index/packages/robotic_hand_bringup
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/cmake/robotic_hand_bringupConfig.cmake
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/cmake/robotic_hand_bringupConfig-version.cmake
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_bringup/share/robotic_hand_bringup/package.xml

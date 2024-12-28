@@ -1,0 +1,1 @@
+/home/waseem/ros2_ws/build/robotic_hand_description/ament_cmake_core/robotic_hand_descriptionConfig.cmake

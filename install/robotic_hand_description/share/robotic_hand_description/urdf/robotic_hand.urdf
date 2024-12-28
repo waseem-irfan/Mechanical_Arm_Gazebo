@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<robot name="robotic_hand">
+        
+        <material name="Wood">
+            <!-- Normalize the color values to [0.0, 1.0] -->
+            <color rgba="0.443 0.306 0.0 1.0" />
+        </material>
+
+        <link name="base_link">
+            <visual>
+                <geometry>
+                    <box size="0.3 0.25 0.05" />
+                </geometry>
+                <origin xyz="0 0 0.01" rpy="0 0 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+<!-- Index Finger -->
+
+        <link name="Index1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.05" />
+                </geometry>
+                <origin xyz="0.025 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="base_Index1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Index1_link" />
+            <origin xyz="0.15 -0.11 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Index2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.05" />
+                </geometry>
+                <origin xyz="0.025 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Index1_Index2_joint" type="revolute">
+            <parent link="Index1_link" />
+            <child link="Index2_link" />
+            <origin xyz="0.05 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Index3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.05" />
+                </geometry>
+                <origin xyz="0.025 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Index2_Index3_joint" type="revolute">
+            <parent link="Index2_link" />
+            <child link="Index3_link" />
+            <origin xyz="0.05 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+<!-- Middle Finger -->
+
+        <link name="Middle1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.06" />
+                </geometry>
+                <origin xyz="0.03 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="base_Middle1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Middle1_link" />
+            <origin xyz="0.15 -0.06 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Middle2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.06" />
+                </geometry>
+                <origin xyz="0.03 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Middle1_Middle2_joint" type="revolute">
+            <parent link="Middle1_link" />
+            <child link="Middle2_link" />
+            <origin xyz="0.06 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Middle3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.06" />
+                </geometry>
+                <origin xyz="0.03 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Middle2_Middle3_joint" type="revolute">
+            <parent link="Middle2_link" />
+            <child link="Middle3_link" />
+            <origin xyz="0.06 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+<!-- Ring Finger -->
+        
+        <link name="Ring1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.057" />
+                </geometry>
+                <origin xyz="0.0285 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="base_Ring1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Ring1_link" />
+            <origin xyz="0.15 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Ring2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.057" />
+                </geometry>
+                <origin xyz="0.0285 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Ring1_Ring2_joint" type="revolute">
+            <parent link="Ring1_link" />
+            <child link="Ring2_link" />
+            <origin xyz="0.057 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Ring3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.057" />
+                </geometry>
+                <origin xyz="0.0285 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Ring2_Ring3_joint" type="revolute">
+            <parent link="Ring2_link" />
+            <child link="Ring3_link" />
+            <origin xyz="0.057 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+<!-- Pinky Finger -->
+
+        <link name="Pinky1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.04" />
+                </geometry>
+                <origin xyz="0.02 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="base_Pinky1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Pinky1_link" />
+            <origin xyz="0.15 0.06 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Pinky2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.04" />
+                </geometry>
+                <origin xyz="0.02 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Pinky1_Pinky2_joint" type="revolute">
+            <parent link="Pinky1_link" />
+            <child link="Pinky2_link" />
+            <origin xyz="0.04 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Pinky3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.018" length="0.04" />
+                </geometry>
+                <origin xyz="0.02 0 0" rpy="0 1.57 0" />
+                <material name="Wood" />
+            </visual>
+        </link>
+
+        <joint name="Pinky2_Pinky3_joint" type="revolute">
+            <parent link="Pinky2_link" />
+            <child link="Pinky3_link" />
+            <origin xyz="0.04 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+</robot>

@@ -1,0 +1,1 @@
+/home/waseem/ros2_ws/build/robotic_hand_description/ament_cmake_environment_hooks/local_setup.bash

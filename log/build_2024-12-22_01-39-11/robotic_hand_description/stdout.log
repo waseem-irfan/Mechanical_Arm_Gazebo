@@ -1,0 +1,25 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/waseem/ros2_ws/build/robotic_hand_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description//urdf/robotic_hand.urdf.xacro
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description//launch/display.launch.xml
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description//rviz/urdf_config.rviz
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/ament_index/resource_index/package_run_dependencies/robotic_hand_description
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/ament_index/resource_index/parent_prefix_path/robotic_hand_description
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/environment/path.sh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/environment/path.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/local_setup.bash
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/local_setup.sh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/local_setup.zsh
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/local_setup.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/package.dsv
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/ament_index/resource_index/packages/robotic_hand_description
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/cmake/robotic_hand_descriptionConfig.cmake
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/cmake/robotic_hand_descriptionConfig-version.cmake
+-- Symlinking: /home/waseem/ros2_ws/install/robotic_hand_description/share/robotic_hand_description/package.xml
