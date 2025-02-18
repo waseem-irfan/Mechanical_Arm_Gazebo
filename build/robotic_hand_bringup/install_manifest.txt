@@ -1,0 +1,17 @@
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup//launch/robotic_hand_gazebo.launch.xml
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup//rviz/urdf_config.rviz
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/ament_index/resource_index/package_run_dependencies/robotic_hand_bringup
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/ament_index/resource_index/parent_prefix_path/robotic_hand_bringup
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/ament_prefix_path.sh
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/ament_prefix_path.dsv
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/path.sh
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/environment/path.dsv
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.bash
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.sh
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.zsh
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/local_setup.dsv
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/package.dsv
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/ament_index/resource_index/packages/robotic_hand_bringup
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/cmake/robotic_hand_bringupConfig.cmake
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/cmake/robotic_hand_bringupConfig-version.cmake
+/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup/share/robotic_hand_bringup/package.xml

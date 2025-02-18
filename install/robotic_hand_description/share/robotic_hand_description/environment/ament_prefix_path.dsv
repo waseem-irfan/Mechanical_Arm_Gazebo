@@ -1,1 +1,1 @@
-/home/waseem/ros2_ws/build/robotic_hand_description/ament_cmake_environment_hooks/ament_prefix_path.dsv
+prepend-non-duplicate;AMENT_PREFIX_PATH;

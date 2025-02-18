@@ -1,1 +1,432 @@
-/home/waseem/ros2_ws/src/robotic_hand_description/urdf/robotic_hand.urdf.xacro
+<?xml version="1.0"?>
+<robot name="robotic_hand" xmlns:xacro="http://www.ros.org/wiki/xacro">
+        <!-- includes -->
+        <xacro:include filename="color_gazebo.xacro" />
+        <!-- Variables -->
+        <xacro:property name="base_length" value="0.3" />
+        <xacro:property name="base_width" value="0.25" />
+        <xacro:property name="base_height" value="0.05" />
+        <xacro:property name="radius" value="0.018" />
+        <xacro:property name="Index_length" value="0.05" />
+        <xacro:property name="Middle_length" value="0.06" />
+        <xacro:property name="Ring_length" value="0.057" />
+        <xacro:property name="Pinky_length" value="0.04" />
+        <xacro:property name="Thumb_length" value="0.05" />
+        <!-- Macros -->
+        <xacro:macro name="base_inertia" params="m l w h xyz rpy">
+            <inertial>
+                <origin xyz="${xyz}" rpy="${rpy}" />
+                <mass value="${m}" />
+                <inertia ixx="${(m/12) * (h*h + l*l)}" ixy="0" ixz="0"
+                         iyy="${(m/12) * (w*w + l*l)}" iyz="0"
+                         izz="${(m/12) * (w*w + h*h)}" />
+            </inertial>
+        </xacro:macro>
+            
+        <xacro:macro name="finger_inertia" params="m r h xyz rpy">
+            <inertial>
+                <origin xyz="${xyz}" rpy="${rpy}" />
+                <mass value="${m}" />
+                <inertia ixx="${(m/12) * (3*(r*r) + (h*h))}" ixy="0" ixz="0"
+                         iyy="${(m/12) * (3*(r*r) + (h*h))}" iyz="0"
+                         izz="${(m/2) * (r*r)}" />
+            </inertial>
+        </xacro:macro>
+
+        <!-- Common Properties -->
+        <material name="Wood">
+            <!-- Normalize the color values to [0.0, 1.0] -->
+            <color rgba="0.444 0.306 0.0 1.0" />
+        </material>
+
+
+        <!-- =============== Robotic hand =============== -->
+        <link name="base_link">
+            <visual>
+                <geometry>
+                    <box size="${base_length} ${base_width} ${base_height}" />
+                </geometry>
+                <origin xyz="0 0 0.01" rpy="0 0 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${base_length} ${base_width} ${base_height}" />
+                </geometry>
+                <origin xyz="0 0 0.01" rpy="0 0 0" />           
+            </collision>
+            <xacro:base_inertia m="0.2" l="${base_length}" w="${base_width}" h="${base_height}"
+                                xyz="0 0 0.01" rpy="0 0 0" />
+        </link>
+
+<!-- Index Finger -->
+
+        <link name="Index1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Index_length}" />
+                </geometry>
+                <origin xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Index_length}" />
+                </geometry>
+                <origin xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Index_length}"
+                                xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="base_Index1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Index1_link" />
+            <origin xyz="${base_length / 2} -0.11 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Index2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Index_length}" />
+                </geometry>
+                <origin xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Index_length}" />
+                </geometry>
+                <origin xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Index_length}"
+                                xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Index1_Index2_joint" type="revolute">
+            <parent link="Index1_link" />
+            <child link="Index2_link" />
+            <origin xyz="${Index_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Index3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Index_length}" />
+                </geometry>
+                <origin xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Index_length}" />
+                </geometry>
+                <origin xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Index_length}"
+                                xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Index2_Index3_joint" type="revolute">
+            <parent link="Index2_link" />
+            <child link="Index3_link" />
+            <origin xyz="${Index_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+<!-- Middle Finger -->
+
+        <link name="Middle1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Middle_length}" />
+                </geometry>
+                <origin xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Middle_length}" />
+                </geometry>
+                <origin xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Middle_length}"
+                                xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="base_Middle1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Middle1_link" />
+            <origin xyz="${base_length / 2.0} -0.06 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Middle2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Middle_length}" />
+                </geometry>
+                <origin xyz="${Middle_length /2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Middle_length}" />
+                </geometry>
+                <origin xyz="${Middle_length /2.0} 0 0" rpy="0 ${pi / 2.0} 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Middle_length}"
+                                xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Middle1_Middle2_joint" type="revolute">
+            <parent link="Middle1_link" />
+            <child link="Middle2_link" />
+            <origin xyz="${Middle_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Middle3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Middle_length}" />
+                </geometry>
+                <origin xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Middle_length}" />
+                </geometry>
+                <origin xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />           
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Middle_length}"
+                                xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Middle2_Middle3_joint" type="revolute">
+            <parent link="Middle2_link" />
+            <child link="Middle3_link" />
+            <origin xyz="${Middle_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+<!-- Ring Finger -->
+        
+        <link name="Ring1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Ring_length}" />
+                </geometry>
+                <origin xyz="${Ring_length / 2.0 } 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Ring_length}" />
+                </geometry>
+                <origin xyz="${Ring_length / 2.0 } 0 0" rpy="0 ${pi / 2.0} 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Ring_length}"
+                                xyz="${Ring_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="base_Ring1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Ring1_link" />
+            <origin xyz="${base_length / 2.0} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Ring2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Ring_length}" />
+                </geometry>
+                <origin xyz="${Ring_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Ring_length}" />
+                </geometry>
+                <origin xyz="${Ring_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Ring_length}"
+                                xyz="${Ring_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Ring1_Ring2_joint" type="revolute">
+            <parent link="Ring1_link" />
+            <child link="Ring2_link" />
+            <origin xyz="${Ring_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Ring3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Ring_length}" />
+                </geometry>
+                <origin xyz="${Ring_length / 2} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Ring_length}" />
+                </geometry>
+                <origin xyz="${Ring_length / 2} 0 0" rpy="0 ${pi / 2.0} 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Ring_length}"
+                                xyz="${Ring_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Ring2_Ring3_joint" type="revolute">
+            <parent link="Ring2_link" />
+            <child link="Ring3_link" />
+            <origin xyz="${Ring_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+<!-- Pinky Finger -->
+
+        <link name="Pinky1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Pinky_length}" />
+                </geometry>
+                <origin xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Pinky_length}" />
+                </geometry>
+                <origin xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Pinky_length}"
+                                xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="base_Pinky1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Pinky1_link" />
+            <origin xyz="${base_length / 2.0} 0.06 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Pinky2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Pinky_length}" />
+                </geometry>
+                <origin xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Pinky_length}" />
+                </geometry>
+                <origin xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Pinky_length}"
+                                xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Pinky1_Pinky2_joint" type="revolute">
+            <parent link="Pinky1_link" />
+            <child link="Pinky2_link" />
+            <origin xyz="${Pinky_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Pinky3_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Pinky_length}" />
+                </geometry>
+                <origin xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Pinky_length}" />
+                </geometry>
+                <origin xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />                
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Pinky_length}"
+                                xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
+        </link>
+
+        <joint name="Pinky2_Pinky3_joint" type="revolute">
+            <parent link="Pinky2_link" />
+            <child link="Pinky3_link" />
+            <origin xyz="${Pinky_length} 0 0" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+        <!-- Thumb Finger-->
+        
+        <link name="Thumb1_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Thumb_length}"/>
+                </geometry>
+                <origin xyz="0 -${Thumb_length / 2.0} 0" rpy="${pi / 2} 0 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Thumb_length}"/>
+                </geometry>
+                <origin xyz="0 -${Thumb_length / 2.0} 0" rpy="${pi / 2} 0 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Thumb_length}"
+                                xyz="0 ${-Thumb_length / 2.0} 0" rpy="${pi / 2.0} 0 0" />
+        </link>
+        <joint name="base_Thumb1_joint" type="revolute">
+            <parent link="base_link" />
+            <child link="Thumb1_link" />
+            <origin xyz="0 ${-base_width /2.0} 0" rpy="0 0 0" />
+            <axis xyz="1 0 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+
+        <link name="Thumb2_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Thumb_length}" />
+                </geometry>
+                <origin xyz="0 ${-Thumb_length / 2.0} 0" rpy="${pi / 2} 0 0" />
+                <material name="Wood" />
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${radius}" length="${Thumb_length}" />
+                </geometry>
+                <origin xyz="0 ${-Thumb_length / 2.0} 0" rpy="${pi / 2} 0 0" />            
+            </collision>
+            <xacro:finger_inertia m="0.05" r="${radius}" h="${Thumb_length}"
+                                xyz="0 ${-Thumb_length / 2.0} 0" rpy="${pi / 2.0} 0 0" />
+        </link>
+
+        <joint name="Thumb1_Thumb2_joint" type="revolute">
+            <parent link="Thumb1_link" />
+            <child link="Thumb2_link" />
+            <origin xyz="0 ${-Thumb_length} 0" rpy="0 0 0" />
+            <axis xyz="1 0 0" />
+            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+        </joint>
+</robot>

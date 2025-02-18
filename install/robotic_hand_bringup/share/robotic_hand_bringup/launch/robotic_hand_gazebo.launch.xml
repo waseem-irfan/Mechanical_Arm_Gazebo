@@ -1,1 +1,21 @@
-/home/waseem/ros2_ws/src/robotic_hand_bringup/launch/robotic_hand_gazebo.launch.xml
+<launch>
+    <let name="urdf_path" 
+         value="$(find-pkg-share robotic_hand_description)/urdf/robotic_hand.urdf.xacro" />
+    
+    <let name="rviz_config_path"
+         value="$(find-pkg-share robotic_hand_description)/rviz/urdf_config.rviz" />   
+
+    <node pkg="robot_state_publisher" exec="robot_state_publisher">
+        <param name="robot_description"
+               value="$(command 'xacro $(var urdf_path)')" />
+    </node>
+
+    <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" />
+
+    <node pkg="gazebo_ros" exec="spawn_entity.py"
+            args="-topic robot_description -entity robotic_hand" />
+
+    <node pkg="rviz2" exec="rviz2" output="screen" 
+          args="-d $(var rviz_config_path)" />
+
+</launch>

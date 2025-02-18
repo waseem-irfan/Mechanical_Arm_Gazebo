@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/waseem/ros2_ws/src/robotic_hand_bringup
+CMAKE_SOURCE_DIR = /home/darkdev/Mechanical_Arm_Gazebo/src/robotic_hand_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/waseem/ros2_ws/build/robotic_hand_bringup
+CMAKE_BINARY_DIR = /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup
 
 # Utility rule file for robotic_hand_bringup_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/robotic_hand_bringup_uninstall.dir/compiler_depend.make
 include CMakeFiles/robotic_hand_bringup_uninstall.dir/progress.make
 
 CMakeFiles/robotic_hand_bringup_uninstall:
-	/usr/bin/cmake -P /home/waseem/ros2_ws/build/robotic_hand_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 robotic_hand_bringup_uninstall: CMakeFiles/robotic_hand_bringup_uninstall
 robotic_hand_bringup_uninstall: CMakeFiles/robotic_hand_bringup_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/robotic_hand_bringup_uninstall.dir/clean:
 .PHONY : CMakeFiles/robotic_hand_bringup_uninstall.dir/clean
 
 CMakeFiles/robotic_hand_bringup_uninstall.dir/depend:
-	cd /home/waseem/ros2_ws/build/robotic_hand_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/waseem/ros2_ws/src/robotic_hand_bringup /home/waseem/ros2_ws/src/robotic_hand_bringup /home/waseem/ros2_ws/build/robotic_hand_bringup /home/waseem/ros2_ws/build/robotic_hand_bringup /home/waseem/ros2_ws/build/robotic_hand_bringup/CMakeFiles/robotic_hand_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/darkdev/Mechanical_Arm_Gazebo/src/robotic_hand_bringup /home/darkdev/Mechanical_Arm_Gazebo/src/robotic_hand_bringup /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup/CMakeFiles/robotic_hand_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robotic_hand_bringup_uninstall.dir/depend
 

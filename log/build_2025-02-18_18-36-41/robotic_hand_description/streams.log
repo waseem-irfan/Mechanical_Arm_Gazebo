@@ -1,0 +1,46 @@
+[0.015s] Invoking command in '/home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description': CMAKE_PREFIX_PATH=/home/darkdev/ROS_Workspaces/FYDP_HARP/install/vision_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/neck_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/face_animations:/opt/ros/humble /usr/bin/cmake /home/darkdev/Mechanical_Arm_Gazebo/src/robotic_hand_description -DCMAKE_INSTALL_PREFIX=/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description
+[0.122s] -- The C compiler identification is GNU 11.4.0
+[0.223s] -- The CXX compiler identification is GNU 11.4.0
+[0.236s] -- Detecting C compiler ABI info
+[0.312s] -- Detecting C compiler ABI info - done
+[0.329s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.330s] -- Detecting C compile features
+[0.331s] -- Detecting C compile features - done
+[0.335s] -- Detecting CXX compiler ABI info
+[0.427s] -- Detecting CXX compiler ABI info - done
+[0.437s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.438s] -- Detecting CXX compile features
+[0.439s] -- Detecting CXX compile features - done
+[0.446s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.893s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.099s] -- Configuring done
+[1.102s] -- Generating done
+[1.104s] -- Build files have been written to: /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description
+[1.115s] Invoked command in '/home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description' returned '0': CMAKE_PREFIX_PATH=/home/darkdev/ROS_Workspaces/FYDP_HARP/install/vision_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/neck_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/face_animations:/opt/ros/humble /usr/bin/cmake /home/darkdev/Mechanical_Arm_Gazebo/src/robotic_hand_description -DCMAKE_INSTALL_PREFIX=/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description
+[1.116s] Invoking command in '/home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description': CMAKE_PREFIX_PATH=/home/darkdev/ROS_Workspaces/FYDP_HARP/install/vision_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/neck_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/face_animations:/opt/ros/humble /usr/bin/cmake --build /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description -- -j8 -l8
+[1.162s] Invoked command in '/home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description' returned '0': CMAKE_PREFIX_PATH=/home/darkdev/ROS_Workspaces/FYDP_HARP/install/vision_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/neck_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/face_animations:/opt/ros/humble /usr/bin/cmake --build /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description -- -j8 -l8
+[1.172s] Invoking command in '/home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description': CMAKE_PREFIX_PATH=/home/darkdev/ROS_Workspaces/FYDP_HARP/install/vision_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/neck_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/face_animations:/opt/ros/humble /usr/bin/cmake --install /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description
+[1.179s] -- Install configuration: ""
+[1.179s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description//urdf
+[1.179s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description//urdf/robotic_hand.urdf.xacro
+[1.179s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description//urdf/color_gazebo.xacro
+[1.180s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description//launch
+[1.180s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description//launch/display.launch.xml
+[1.180s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description//rviz
+[1.180s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description//rviz/urdf_config.rviz
+[1.180s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/ament_index/resource_index/package_run_dependencies/robotic_hand_description
+[1.180s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/ament_index/resource_index/parent_prefix_path/robotic_hand_description
+[1.181s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/environment/ament_prefix_path.sh
+[1.181s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/environment/ament_prefix_path.dsv
+[1.181s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/environment/path.sh
+[1.181s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/environment/path.dsv
+[1.182s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/local_setup.bash
+[1.182s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/local_setup.sh
+[1.182s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/local_setup.zsh
+[1.182s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/local_setup.dsv
+[1.182s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/package.dsv
+[1.183s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/ament_index/resource_index/packages/robotic_hand_description
+[1.183s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/cmake/robotic_hand_descriptionConfig.cmake
+[1.183s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/cmake/robotic_hand_descriptionConfig-version.cmake
+[1.183s] -- Installing: /home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_description/share/robotic_hand_description/package.xml
+[1.186s] Invoked command in '/home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description' returned '0': CMAKE_PREFIX_PATH=/home/darkdev/ROS_Workspaces/FYDP_HARP/install/vision_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/neck_module:/home/darkdev/ROS_Workspaces/FYDP_HARP/install/face_animations:/opt/ros/humble /usr/bin/cmake --install /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_description
