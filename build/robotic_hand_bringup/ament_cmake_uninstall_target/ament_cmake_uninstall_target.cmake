@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "/home/waseem/ros2_ws/install/robotic_hand_bringup")
+  set(install_space "/home/darkdev/Mechanical_Arm_Gazebo/install/robotic_hand_bringup")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/waseem/ros2_ws/build/robotic_hand_bringup/install_manifest.txt")
+set(install_manifest "/home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/waseem/ros2_ws/build/robotic_hand_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

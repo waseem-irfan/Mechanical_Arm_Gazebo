@@ -1,1 +1,1 @@
-/home/waseem/ros2_ws/build/robotic_hand_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robotic_hand_bringup
+robotic_hand_description;robot_state_publisher;gazebo_ros;ament_lint_auto;ament_lint_common

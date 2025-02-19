@@ -1,1 +1,2 @@
-/home/waseem/ros2_ws/build/robotic_hand_description/ament_cmake_environment_hooks/local_setup.dsv
+source;share/robotic_hand_description/environment/ament_prefix_path.sh
+source;share/robotic_hand_description/environment/path.sh

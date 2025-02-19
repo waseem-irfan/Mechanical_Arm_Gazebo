@@ -1,0 +1,27 @@
+[1.137s] Invoking command in '/home/darkdev/Mechanical_Arm_Gazebo/src/esp_serial': PYTHONPATH=/home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_serial build --build-base /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build install --record /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/install.log --single-version-externally-managed install_data
+[1.480s] running egg_info
+[1.501s] writing ../../build/esp_serial/esp_serial.egg-info/PKG-INFO
+[1.501s] writing dependency_links to ../../build/esp_serial/esp_serial.egg-info/dependency_links.txt
+[1.502s] writing entry points to ../../build/esp_serial/esp_serial.egg-info/entry_points.txt
+[1.502s] writing requirements to ../../build/esp_serial/esp_serial.egg-info/requires.txt
+[1.505s] writing top-level names to ../../build/esp_serial/esp_serial.egg-info/top_level.txt
+[1.563s] reading manifest file '../../build/esp_serial/esp_serial.egg-info/SOURCES.txt'
+[1.565s] writing manifest file '../../build/esp_serial/esp_serial.egg-info/SOURCES.txt'
+[1.565s] running build
+[1.565s] running build_py
+[1.565s] copying esp_serial/__init__.py -> /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial
+[1.565s] copying esp_serial/esp32_serial.py -> /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial
+[1.566s] running install
+[1.571s] running install_lib
+[1.592s] copying /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial/esp32_serial.py -> /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial
+[1.592s] byte-compiling /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial/esp32_serial.py to esp32_serial.cpython-310.pyc
+[1.593s] running install_data
+[1.593s] copying resource/esp_serial -> /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/share/ament_index/resource_index/packages
+[1.593s] copying package.xml -> /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/share/esp_serial
+[1.594s] running install_egg_info
+[1.634s] removing '/home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial-0.0.0-py3.10.egg-info' (and everything under it)
+[1.635s] Copying ../../build/esp_serial/esp_serial.egg-info to /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial-0.0.0-py3.10.egg-info
+[1.637s] running install_scripts
+[1.838s] Installing esp_serial script to /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/esp_serial
+[1.839s] writing list of installed files to '/home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/install.log'
+[1.866s] Invoked command in '/home/darkdev/Mechanical_Arm_Gazebo/src/esp_serial' returned '0': PYTHONPATH=/home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_serial build --build-base /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build install --record /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/install.log --single-version-externally-managed install_data

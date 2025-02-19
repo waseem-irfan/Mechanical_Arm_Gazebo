@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/waseem/ros2_ws/src/robotic_hand_bringup
+CMAKE_SOURCE_DIR = /home/darkdev/Mechanical_Arm_Gazebo/src/robotic_hand_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/waseem/ros2_ws/build/robotic_hand_bringup
+CMAKE_BINARY_DIR = /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/waseem/ros2_ws/build/robotic_hand_bringup/CMakeFiles /home/waseem/ros2_ws/build/robotic_hand_bringup//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup/CMakeFiles /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/waseem/ros2_ws/build/robotic_hand_bringup/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/darkdev/Mechanical_Arm_Gazebo/build/robotic_hand_bringup/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

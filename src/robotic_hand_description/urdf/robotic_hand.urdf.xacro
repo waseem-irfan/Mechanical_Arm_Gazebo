@@ -79,12 +79,12 @@
                                 xyz="${Index_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
         </link>
 
-        <joint name="base_Index1_joint" type="revolute">
+        <joint name="Index_finger" type="revolute">
             <parent link="base_link" />
             <child link="Index1_link" />
             <origin xyz="${base_length / 2} -0.11 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
         </joint>
 
         <link name="Index2_link">
@@ -110,7 +110,8 @@
             <child link="Index2_link" />
             <origin xyz="${Index_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Index_finger" multiplier="1.0" offset="0.0"/>
         </joint>
 
         <link name="Index3_link">
@@ -136,7 +137,8 @@
             <child link="Index3_link" />
             <origin xyz="${Index_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Index_finger" multiplier="1.0" offset="0.0"/>
         </joint>
 
 <!-- Middle Finger -->
@@ -159,12 +161,12 @@
                                 xyz="${Middle_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
         </link>
 
-        <joint name="base_Middle1_joint" type="revolute">
+        <joint name="Middle_finger" type="revolute">
             <parent link="base_link" />
             <child link="Middle1_link" />
             <origin xyz="${base_length / 2.0} -0.06 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
         </joint>
 
         <link name="Middle2_link">
@@ -190,7 +192,8 @@
             <child link="Middle2_link" />
             <origin xyz="${Middle_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Middle_finger" multiplier="1.0" offset="0.0"/>
         </joint>
 
         <link name="Middle3_link">
@@ -216,7 +219,8 @@
             <child link="Middle3_link" />
             <origin xyz="${Middle_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Middle_finger" multiplier="1.0" offset="0.0"/>
         </joint>
 
 <!-- Ring Finger -->
@@ -239,12 +243,12 @@
                                 xyz="${Ring_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
         </link>
 
-        <joint name="base_Ring1_joint" type="revolute">
+        <joint name="Ring_finger" type="revolute">
             <parent link="base_link" />
             <child link="Ring1_link" />
             <origin xyz="${base_length / 2.0} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
         </joint>
 
         <link name="Ring2_link">
@@ -270,7 +274,8 @@
             <child link="Ring2_link" />
             <origin xyz="${Ring_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Ring_finger" multiplier="1.0" offset="0.0"/>
         </joint>
 
         <link name="Ring3_link">
@@ -296,7 +301,8 @@
             <child link="Ring3_link" />
             <origin xyz="${Ring_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Ring_finger" multiplier="1.0" offset="0.0"/>
         </joint>
 <!-- Pinky Finger -->
 
@@ -318,12 +324,12 @@
                                 xyz="${Pinky_length / 2.0} 0 0" rpy="0 ${pi / 2.0} 0" />
         </link>
 
-        <joint name="base_Pinky1_joint" type="revolute">
+        <joint name="Pinky_finger" type="revolute">
             <parent link="base_link" />
             <child link="Pinky1_link" />
             <origin xyz="${base_length / 2.0} 0.06 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
         </joint>
 
         <link name="Pinky2_link">
@@ -349,7 +355,8 @@
             <child link="Pinky2_link" />
             <origin xyz="${Pinky_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Pinky_finger" multiplier="1.0" offset="0.0"/>
         </joint>
 
         <link name="Pinky3_link">
@@ -375,7 +382,8 @@
             <child link="Pinky3_link" />
             <origin xyz="${Pinky_length} 0 0" rpy="0 0 0" />
             <axis xyz="0 1 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Pinky_finger" multiplier="1.0" offset="0.0"/>
         </joint>
         <!-- Thumb Finger-->
         
@@ -396,12 +404,12 @@
             <xacro:finger_inertia m="0.05" r="${radius}" h="${Thumb_length}"
                                 xyz="0 ${-Thumb_length / 2.0} 0" rpy="${pi / 2.0} 0 0" />
         </link>
-        <joint name="base_Thumb1_joint" type="revolute">
+        <joint name="Thumb" type="revolute">
             <parent link="base_link" />
             <child link="Thumb1_link" />
             <origin xyz="0 ${-base_width /2.0} 0" rpy="0 0 0" />
             <axis xyz="1 0 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
         </joint>
 
         <link name="Thumb2_link">
@@ -427,6 +435,7 @@
             <child link="Thumb2_link" />
             <origin xyz="0 ${-Thumb_length} 0" rpy="0 0 0" />
             <axis xyz="1 0 0" />
-            <limit lower="0" upper="-1.57" effort="100" velocity="100" />
+            <limit lower="0" upper="-0.785" effort="100" velocity="100" />
+            <mimic joint="Thumb" multiplier="1.0" offset="0.0"/>
         </joint>
 </robot>

@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/esp_serial/esp_serial.egg-info
+writing ../../build/esp_serial/esp_serial.egg-info/PKG-INFO
+writing dependency_links to ../../build/esp_serial/esp_serial.egg-info/dependency_links.txt
+writing entry points to ../../build/esp_serial/esp_serial.egg-info/entry_points.txt
+writing requirements to ../../build/esp_serial/esp_serial.egg-info/requires.txt
+writing top-level names to ../../build/esp_serial/esp_serial.egg-info/top_level.txt
+writing manifest file '../../build/esp_serial/esp_serial.egg-info/SOURCES.txt'
+reading manifest file '../../build/esp_serial/esp_serial.egg-info/SOURCES.txt'
+writing manifest file '../../build/esp_serial/esp_serial.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial
+copying esp_serial/__init__.py -> /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial
+copying esp_serial/esp32_serial.py -> /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial
+running install
+running install_lib
+creating /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial
+copying /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial/__init__.py -> /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial
+copying /home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/build/lib/esp_serial/esp32_serial.py -> /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial
+byte-compiling /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial/esp32_serial.py to esp32_serial.cpython-310.pyc
+running install_data
+creating /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/share/ament_index/resource_index/packages
+copying resource/esp_serial -> /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/share/ament_index/resource_index/packages
+creating /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/share/esp_serial
+copying package.xml -> /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/share/esp_serial
+running install_egg_info
+Copying ../../build/esp_serial/esp_serial.egg-info to /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/python3.10/site-packages/esp_serial-0.0.0-py3.10.egg-info
+running install_scripts
+Installing esp_serial script to /home/darkdev/Mechanical_Arm_Gazebo/install/esp_serial/lib/esp_serial
+writing list of installed files to '/home/darkdev/Mechanical_Arm_Gazebo/build/esp_serial/install.log'
